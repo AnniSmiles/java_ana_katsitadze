@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Text?>
+<GridPane fx:controller="com.example.java_ana_katsitadze.FlightsController"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <padding><Insets top="25" right="25" bottom="10" left="25"/></padding>
+    <Text text="Welcome"
+          GridPane.columnIndex="0" GridPane.rowIndex="0"
+          GridPane.columnSpan="2"/>
+
+    <Label text="Start City:"
+           GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+
+    <TextField
+            GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="tbStartCity"/>
+    <Label text="Direction"
+           GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <TextField
+            GridPane.columnIndex="1" GridPane.rowIndex="2" fx:id="tbDirection"/>
+    <Label text="Places"
+           GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    <TextField
+            GridPane.columnIndex="1" GridPane.rowIndex="3" fx:id="tbPlaces"/>
+    <Label text="Flight Date"
+           GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+    <TextField
+            GridPane.columnIndex="1" GridPane.rowIndex="4" fx:id="tbFlightDate"/>
+    <Label text="Price"
+           GridPane.columnIndex="0" GridPane.rowIndex="5" />
+    <TextField
+            GridPane.columnIndex="1" GridPane.rowIndex="5" fx:id="tbPrice"/>
+
+    <Button text="Save" onAction="#onSaveButtonClick" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+    <Button text="Save" onAction="#onShowGraphButtonClick" GridPane.columnIndex="1" GridPane.rowIndex="7"/>
+
+
+
+
+
+
+</GridPane>
